@@ -10,7 +10,7 @@ let equationGenerator = function(
   number = Number(number);
   upperLimit = Number(upperLimit);
 
-  if (number === undefined || isNaN(number)) {
+  if (isNaN(number)) {
     return result;
   } else {
     if (isNaN(upperLimit)) {

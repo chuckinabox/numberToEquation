@@ -5,6 +5,14 @@ describe("Returns array of equations to equal number input", function() {
   it("No entry returns empty object", function() {
     expect(equationGenerator()).toEqual({ "+": [], "-": [], "/": [], "*": [] });
   });
+  it("Bad entry returns empty object", function() {
+    expect(equationGenerator("abc")).toEqual({
+      "+": [],
+      "-": [],
+      "/": [],
+      "*": []
+    });
+  });
   it("0 returns 0+0, 0-0, 0/1, 0*0", function() {
     let zeroResults = equationGenerator("0");
     expect(zeroResults["+"]).toEqual(["0 + 0"]);

@@ -2,16 +2,19 @@
   "name": "numbertoequation",
   "version": "1.0.0",
   "description": "Convert a number to equations (+,-,/,*)",
-  "main": "/src/equationGenerator",
+  "main": "index.js",
   "scripts": {
     "test": "jasmine"
   },
-  "author": "",
+  "author": "Chuck Michael <chuckinabox11@gmail.com> (chuck-michael.com)",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^3.1.0"
-  },
-  "dependencies": {
+    "jasmine": "^3.1.0",
     "mathjs": "^4.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckinabox/numberToEquation.git"
   }
 }
