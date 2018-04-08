@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "test-travis":
-      "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test-travis": "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Chuck Michael <chuckinabox11@gmail.com> (chuck-michael.com)",
   "license": "ISC",
@@ -15,7 +14,8 @@
     "istanbul": "^0.4.5",
     "jasmine": "^3.1.0",
     "jasmine-node": "^1.14.5",
-    "mathjs": "^4.0.1"
+    "mathjs": "^4.0.1",
+    "karma-jasmine": "~0.3.6"
   },
   "dependencies": {},
   "repository": {
