@@ -1,4 +1,8 @@
-# numberToEquation [![Build Status](https://travis-ci.org/chuckinabox/numberToEquation.svg?branch=master)](https://travis-ci.org/chuckinabox/numberToEquation) [![Coverage Status](https://coveralls.io/repos/github/chuckinabox/numberToEquation/badge.svg?branch=master)](https://coveralls.io/github/chuckinabox/numberToEquation?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# numberToEquation
+
+[![Build Status][build-image]][build-url]
+[![Coverage Status][coverage-image]][coverage-url]
+[![License MIT][license-image]][license-url]
 
 Convert a number to a list of all simple math equations up to a provided limit digit.
 
@@ -55,3 +59,10 @@ numberToEquation( equationTotal,
 ## Contributing
 
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
+
+[build-image]: https://travis-ci.org/chuckinabox/numberToEquation.svg
+[build-url]: https://travis-ci.org/chuckinabox/numberToEquation
+[coverage-image]: https://coveralls.io/repos/github/chuckinabox/numberToEquation/badge.svg
+[coverage-url]: https://coveralls.io/github/chuckinabox/numberToEquation
+[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: https://opensource.org/licenses/MIT
