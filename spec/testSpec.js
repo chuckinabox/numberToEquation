@@ -34,8 +34,8 @@ describe("Returns array of equations to equal number input", function() {
     );
   });
   it("mathematicaly correct results", function() {
-    var number = 10;
-    var iter = 0;
+    let number = 10;
+    let iter = 0;
     const results = equationGenerator(number, "4");
 
     for (iter = 0; iter < results["+"].length; iter++) {
