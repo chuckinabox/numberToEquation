@@ -1,6 +1,6 @@
 {
   "name": "numbertoequation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert a number to equations (+,-,/,*)",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,13 @@
       "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Chuck Michael <chuckinabox11@gmail.com> (chuck-michael.com)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
     "jasmine": "^3.1.0",
     "jasmine-node": "^1.14.5",
-    "mathjs": "^4.0.1"
+    "mathjs": "^4.1.0"
   },
   "dependencies": {},
   "repository": {
