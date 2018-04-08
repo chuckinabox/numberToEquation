@@ -4,7 +4,7 @@ Convert a number to a list of all simple math equations up to a provided limit d
 
 ## Installation
 
-npm install numberToEquation
+`npm install numberToEquation`
 
 ## Usage
 
