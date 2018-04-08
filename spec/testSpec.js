@@ -14,7 +14,7 @@ describe("Returns array of equations to equal number input", function() {
     });
   });
   it("0 returns 0+0, 0-0, 0/1, 0*0", function() {
-    let zeroResults = equationGenerator("0");
+    const zeroResults = equationGenerator("0");
     expect(zeroResults["+"]).toEqual(["0 + 0"]);
     expect(zeroResults["-"]).toEqual(["0 - 0"]);
     expect(zeroResults["/"]).toEqual(["0 / 1"]);
@@ -36,7 +36,7 @@ describe("Returns array of equations to equal number input", function() {
   it("mathematicaly correct results", function() {
     let number = 10;
     let iter = 0;
-    let results = equationGenerator(number, "4");
+    const results = equationGenerator(number, "4");
 
     for (iter = 0; iter < results["+"].length; iter++) {
       expect(math.eval(results["+"][iter])).toEqual(number);
