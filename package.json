@@ -1,12 +1,11 @@
 {
   "name": "numbertoequation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert a number to equations (+,-,/,*)",
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "test-travis":
-      "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test-travis": "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Chuck Michael <chuckinabox11@gmail.com> (chuck-michael.com)",
   "license": "MIT",
