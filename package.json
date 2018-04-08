@@ -1,0 +1,17 @@
+{
+  "name": "numbertoequation",
+  "version": "1.0.0",
+  "description": "Convert a number to equations (+,-,/,*)",
+  "main": "/src/equationGenerator",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  },
+  "dependencies": {
+    "mathjs": "^4.0.1"
+  }
+}
