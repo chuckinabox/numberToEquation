@@ -21,17 +21,16 @@ describe("Returns array of equations to equal number input", function() {
     expect(zeroResults["*"]).toEqual(["0 * 0"]);
   });
   it("No divided by 0 results", function() {
-    expect(equationGenerator("0")["/"]).not.toEqual(
-      jasmine.arrayContaining(["0 / 0"])
-    );
+    let zerosDivide = equationGenerator("0")["/"];
+    expect(zerosDivide.includes("0 / 0")).toBe(false);
   });
   it("upperLimit parameter returns greater results", function() {
-    expect(equationGenerator("0", "3")["/"]).toEqual(
-      jasmine.arrayContaining(["0 / 1", "0 / 3"])
-    );
-    expect(equationGenerator("4", "50")["+"]).toEqual(
-      jasmine.arrayContaining(["4 + 0"])
-    );
+    let zerosDivide = equationGenerator("0", "3")["/"];
+    expect(zerosDivide.includes("0 / 1")).toBe(true);
+    expect(zerosDivide.includes("0 / 3")).toBe(true);
+
+    let foursPlus = equationGenerator("4", "50")["+"];
+    expect(foursPlus.includes("4 + 0")).toBe(true);
   });
   it("mathematicaly correct results", function() {
     let number = 10;
