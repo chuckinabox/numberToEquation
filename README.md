@@ -1,4 +1,4 @@
-# numberToEquation
+# numberToEquation [![Build Status](https://travis-ci.org/chuckinabox/numberToEquation.svg?branch=master)](https://travis-ci.org/chuckinabox/numberToEquation)
 
 Convert a number to a list of all simple math equations up to a provided limit.
 

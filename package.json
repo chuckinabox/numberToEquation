@@ -4,13 +4,17 @@
   "description": "Convert a number to equations (+,-,/,*)",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
   },
   "author": "Chuck Michael <chuckinabox11@gmail.com> (chuck-michael.com)",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^3.1.0",
-    "mathjs": "^4.0.1"
+    "mathjs": "^4.0.1",
+    "coveralls": "2.10.0",
+    "istanbul": "0.3.5",
+    "mocha": "2.0.0"
   },
   "dependencies": {},
   "repository": {
