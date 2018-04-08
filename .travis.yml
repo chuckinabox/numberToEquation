@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "6.4.0"
-before_install: dpkg --compare-versions `npm -v` ge 5.8 || npm i -g npm@^5.8
+before_install: npm install -g jasmine
 script: "npm run-script test-travis"
 # Send coverage data to Coveralls
 after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
